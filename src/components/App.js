@@ -8,6 +8,8 @@ import Progress from "./Progress";
 import { useQuiz } from "../context/QuizContext";
 import Question from "./Question";
 import Footer from "./Footer";
+import Timer from "./Timer";
+import NextButton from "./NextButton";
 
 function App() {
   const { status } = useQuiz();
@@ -23,8 +25,8 @@ function App() {
             <Progress />
             <Question />
             <Footer>
-
-              
+              <Timer />
+              <NextButton />
             </Footer>
           </>
         )}
