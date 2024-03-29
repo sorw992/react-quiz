@@ -7,6 +7,7 @@ import StartScreen from "./StartScreen";
 import Progress from "./Progress";
 import { useQuiz } from "../context/QuizContext";
 import Question from "./Question";
+import Footer from "./Footer";
 
 function App() {
   const { status } = useQuiz();
@@ -21,6 +22,10 @@ function App() {
           <>
             <Progress />
             <Question />
+            <Footer>
+
+              
+            </Footer>
           </>
         )}
       </Main>
