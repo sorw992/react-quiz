@@ -1,3 +1,5 @@
+# React Quiz is a simple app that i used Context API, custom hooks and json server in it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
