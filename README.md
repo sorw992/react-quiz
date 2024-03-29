@@ -16,4 +16,4 @@ You may also see any lint errors in the console.
 
 ### `npm run server`
 
-Runs the fake server for getting questions.\
+Runs the fake server for getting questions.
