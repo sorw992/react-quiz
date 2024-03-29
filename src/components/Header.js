@@ -1,4 +1,3 @@
-//presentational component (it doesn't even receive any props and doesn't have any states)
 function Header() {
   return (
     <header className="app-header">
