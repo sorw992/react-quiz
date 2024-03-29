@@ -1,16 +1,17 @@
-import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Loader from "./components/Loader";
-import Error from "./components/Error";
-import StartScreen from "./components/StartScreen";
-import Progress from "./components/Progress";
-import { useQuiz } from "./context/QuizContext";
+import Header from "./Header";
+import Main from "./Main";
+import Loader from "./Loader";
+import Error from "./Error";
+import StartScreen from "./StartScreen";
+
+import Progress from "./Progress";
+import { useQuiz } from "../context/QuizContext";
+import Question from "./Question";
 
 function App() {
   const { status } = useQuiz();
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Main>
         {status === "loading" && <Loader />}
@@ -19,6 +20,7 @@ function App() {
         {status === "active" && (
           <>
             <Progress />
+            <Question />
           </>
         )}
       </Main>
