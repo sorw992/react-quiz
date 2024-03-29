@@ -10,6 +10,7 @@ import Question from "./Question";
 import Footer from "./Footer";
 import Timer from "./Timer";
 import NextButton from "./NextButton";
+import FinishScreen from "./FinishScreen";
 
 function App() {
   const { status } = useQuiz();
@@ -31,6 +32,7 @@ function App() {
           </>
         )}
       </Main>
+      {status === "finished" && <FinishScreen />}
     </div>
   );
 }
