@@ -6,9 +6,7 @@ const SECS_PER_QUESTION = 30;
 
 let initialState = {
   questions: [],
-  // app statuses: 'loading', 'error', 'ready', 'active', 'finished'
   status: "loading",
-  // current question (for showing in ui)
   index: 0,
   // there will be no answer initially
   answer: null,
